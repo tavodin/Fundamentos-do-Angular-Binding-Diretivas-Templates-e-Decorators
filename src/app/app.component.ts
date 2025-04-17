@@ -25,4 +25,9 @@ export class AppComponent {
   setInputType() {
     this.inputType = "text";
   }
+
+  handleInputKeyup(event: KeyboardEvent) {
+    const currentText = (event.target as HTMLInputElement).value  
+    console.log(currentText);
+  }
 }

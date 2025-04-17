@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'fundamentos-angular-2';
+  inputText = "Texto Inicial Alterado";
+  inputType = "password";
+  isDisabled = false;
+
+  enableInput() {
+    this.isDisabled = false;
+  }
+
+  disableInput() {
+    this.isDisabled = true;
+  }
+
+  setInputText() {
+    this.inputText = "Gustavo Teixeira";
+  }
+
+  setInputType() {
+    this.inputType = "text";
+  }
 }
